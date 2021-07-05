@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Car from './Car/Car'
 
 export default class Cars extends Component {
   state = {
     cars: [
-      {name: 'Ford', year: 2018},
-      {name: 'Audi', year: 2016},
-      {name: 'Mazda', year: 2010}
+      { name: 'Ford', year: 2018 },
+      { name: 'Audi', year: 2016 },
+      { name: 'Mazda', year: 2010 }
     ]
   }
 
@@ -17,7 +17,7 @@ export default class Cars extends Component {
   }
 
   render() {
-    console.log(this.props)
+
     return (
       <div style={{
         width: 400,
@@ -27,12 +27,12 @@ export default class Cars extends Component {
       }}>
 
         <button
-        onClick={this.goToHomepage}
+          onClick={this.goToHomepage}
         >Return to Home</button>
 
         <hr></hr>
 
-        
+
 
         {this.state.cars.map((car, index) => {
           return (
